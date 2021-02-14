@@ -64,7 +64,7 @@ jobs:
     - name: Setup ImageMagick policy
       run: sudo sh -c 'echo '\''<policymap><policy domain="coder" rights="read|write" pattern="PDF" /></policymap>'\'' > /etc/ImageMagick-6/policy.xml'
     - name: Install ghostscript to process PDF
-      run: sudo apt-get -y install ghostscript
+      run: sudo apt-get -y install ghostscript libvips
     - name: Install dependencies
       run: bundle install --jobs=3 --retry=3 --path=vendor/bundle || [ "$EXPERIMENTAL" == "true" ] && true
     - name: Run RSpec
