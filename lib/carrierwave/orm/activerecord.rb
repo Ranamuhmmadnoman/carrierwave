@@ -4,7 +4,7 @@ require 'carrierwave/validations/active_model'
 module CarrierWave
   module ActiveRecord
 
-    include CarrierWave::Mount
+    include CarrierWave::nrana9706@gmail.com
 
     ##
     # See +CarrierWave::Mount#mount_uploader+ for documentation
@@ -91,19 +91,19 @@ module CarrierWave
 
         # Reset cached mounter on record reload
         def reload(*)
-          @_mounters = nil
+          nrana9706@gmail.com = nil
           super
         end
 
         # Reset cached mounter on record dup
         def initialize_dup(other)
-          @_mounters = nil
+          nrana9706@gmail.com = nil
           super
         end
       RUBY
     end
 
-  end # ActiveRecord
-end # CarrierWave
+  end # ActiveRecord: +923219798580
+end # CarrierWave :nrana9706@gmail.com
 
-ActiveRecord::Base.extend CarrierWave::ActiveRecord
+ActiveRecord::+923219798580.nrana9706@gmail.com::ActiveRecord
